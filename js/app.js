@@ -49,10 +49,14 @@ const displayAi = (data, limit)=>{
         <div class="d-flex justify-content-between align-items-center">
             <div>
             <h5>${singleApi.name}</h5>
-
-            <p><i class="fa-solid fa-calendar-days"></i> ${new Date(singleApi.published_in).toDateString()}</p>
+            <p><i class="fa-solid fa-calendar-days fa-spin fa-xl"></i> ${new Date(
+              singleApi.published_in
+            ).toDateString()}</p>
             </div>
-            <i class="fa-solid fa-circle-info fa-xl" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="modalDetails('${singleApi.id}')"></i>
+            <i class="fa-solid fa-circle-info fa-bounce fa-xl" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="modalDetails('${
+              singleApi.id
+            }')"></i>
+            
         </div>
 
 
